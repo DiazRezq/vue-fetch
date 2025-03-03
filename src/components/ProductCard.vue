@@ -1,9 +1,13 @@
+<script setup>
+const { product } = defineProps({ product: Object });
+</script>
+
 <template>
   <div class="product-card">
-    <img src="" alt="product.title" class="product-image" />
-    <h2 class="product-title">Title</h2>
-    <p class="product-description">short product description</p>
-    <span class="product-price">100.000</span>
+    <img :src="product.image" :alt="product.title" class="product-image" />
+    <h2 class="product-title">{{ product.title }}</h2>
+    <p class="product-description">{{ product.description }}</p>
+    <span class="product-price">{{ product.price }}</span>
   </div>
 </template>
 

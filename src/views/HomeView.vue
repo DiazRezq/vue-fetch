@@ -2,45 +2,26 @@
 import ProductCard from "@/components/ProductCard.vue";
 import Pagination from "@/components/Pagination.vue";
 
-import {
-  onBeforeMount,
-  onBeforeUpdate,
-  onMounted,
-  onUnmounted,
-  ref,
-} from "vue";
+import { ref } from "vue";
+import axios from "axios";
 
-const page = ref(1);
+const products = ref([]);
 
-onBeforeMount(() => {
-  console.log("onBeforeMount");
-  // persiapan atau effek sebelum mounting
-});
+products.value = await axios
+  .get("http://localhost:3000/products")
+  .then((response) => response.data);
 
-onMounted(() => {
-  console.log("onMounted");
-});
-
-onBeforeUpdate(() => {
-  console.log("onBeforeUpdate");
-  // persiapan atau effek sebelum update
-});
-
-onUnmounted(() => {
-  console.log("onUnmounted");
-});
-
-function nextPage() {
-  page.value++;
-}
+console.log(products.value);
 </script>
 
 <template>
   <main>
-    {{ page }}
-    <button @click="nextPage">Next</button>
     <div class="product-grid">
-      <ProductCard />
+      <ProductCard
+        v-for="(product, index) in products"
+        :key="index"
+        :product="product"
+      />
     </div>
     <div class="pagination">
       <Pagination />
