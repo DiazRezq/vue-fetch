@@ -8,13 +8,6 @@
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": "10",
-      "title": "Smart Home Security System",
-      "description": "Protect your home with this smart security system featuring cameras and sensors.",
-      "price": 349.99,
-      "image": "https://via.placeholder.com/150"
-    },
-    {
       "id": "11",
       "title": "Wireless Charging Pad",
       "description": "Charge your compatible devices effortlessly with this sleek wireless charging pad.",
@@ -117,13 +110,6 @@
       "title": "Fitness Smartwatch",
       "description": "Track your fitness goals and stay connected with this feature-packed fitness smartwatch.",
       "price": 159.99,
-      "image": "https://via.placeholder.com/150"
-    },
-    {
-      "id": "26",
-      "title": "Premium Leather Wallet",
-      "description": "Organize your essentials in style with this premium leather wallet featuring multiple card slots and a sleek design.",
-      "price": 49.99,
       "image": "https://via.placeholder.com/150"
     },
     {
@@ -369,7 +355,14 @@
       "title": "Dolore elit id volu",
       "description": "Nisi alias nulla exp",
       "price": 512,
-      "image": "Iste modi omnis omni"
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "title": "pante kibor dummy",
+      "description": "blue switch typing automate",
+      "price": "120",
+      "images": "https://via.placeholder.com/150",
+      "id": "8514"
     }
   ]
 }
